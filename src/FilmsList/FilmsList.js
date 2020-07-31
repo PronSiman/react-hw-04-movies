@@ -23,8 +23,8 @@ const FilmsList = ({ films, location }) => {
           originalTitle,
           name,
           originalName,
-          releaseDate,
-          firstAirDate,
+          release_date,
+          first_air_date,
           poster_path,
         }) => (
           <FilmsItemCard
@@ -33,8 +33,8 @@ const FilmsList = ({ films, location }) => {
             originalTitle={originalTitle}
             name={name}
             originalName={originalName}
-            releaseDate={releaseDate}
-            firstAirDate={firstAirDate}
+            release_date={release_date}
+            first_air_date={first_air_date}
             posterPath={poster_path}
             id={id}
             location={location}

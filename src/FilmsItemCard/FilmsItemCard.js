@@ -48,8 +48,8 @@ const FilmsItemCard = ({
   originalTitle,
   name,
   originalName,
-  releaseDate,
-  firstAirDate,
+  release_date,
+  first_air_date,
   posterPath,
   id,
   location,
@@ -72,9 +72,9 @@ const FilmsItemCard = ({
           }
         />
         <ReliseDate>
-          {releaseDate
-            ? `Release date: ${releaseDate}`
-            : `First Air date: ${firstAirDate}`}
+          {release_date
+            ? `Release date: ${release_date}`
+            : `First Air date: ${first_air_date}`}
         </ReliseDate>
       </NavLink>
     </FilmCard>
@@ -85,8 +85,8 @@ FilmsItemCard.defaultProps = {
   originalTitle: '',
   name: '',
   originalName: '',
-  releaseDate: '',
-  firstAirDate: '',
+  release_date: '',
+  first_air_date: '',
   posterPath: '',
   location: {},
 };
@@ -95,8 +95,8 @@ FilmsItemCard.propTypes = {
   originalTitle: PropTypes.string,
   name: PropTypes.string,
   originalName: PropTypes.string,
-  releaseDate: PropTypes.string,
-  firstAirDate: PropTypes.string,
+  release_date: PropTypes.string,
+  first_air_date: PropTypes.string,
   posterPath: PropTypes.string,
   id: PropTypes.number.isRequired,
   location: PropTypes.objectOf(PropTypes.any),
